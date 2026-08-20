@@ -37,4 +37,3 @@ os.remove('3.py')'''
 # To remove a file from current directory
 '''import os
 os.rmdir('demo')'''
-
