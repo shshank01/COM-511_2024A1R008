@@ -3,7 +3,7 @@ Total numbers of character
 First character
 Last character
 Name in uppercase form'''
-name=input("Enter your full name: ")
+name = input("Enter your full name: ")
 print(len(name))
 print(name[0])
 print(name[-1])
