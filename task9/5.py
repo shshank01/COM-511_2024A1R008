@@ -4,13 +4,13 @@
 
 comment=input("Enter your comment: ")
 spam_keywords = ["make a lot of money", "buy now", "subscribe this", "click this"]
-is_spam = False
-for keyword in spam_keywords:
-    if keyword in comment:
-        is_spam = True
+flag = False
+for i in spam_keywords:
+    if i in comment:
+        flag = True
         break
 
-if is_spam:
+if flag:
     print("This comment is spam.")
 else:
     print("This comment is not spam.")
