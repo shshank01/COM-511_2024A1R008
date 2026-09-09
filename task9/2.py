@@ -5,7 +5,7 @@
 while 1:
     password=input("Enter the password: ")
     if '@' in password and len(password)>=8:
-        print("Password is valid.")
+        print("Password accepted.")
         break
     else:
-        print("Password is invalid. Please try again.")
+        print("Weak password. Try again.")
