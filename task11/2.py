@@ -3,9 +3,8 @@
 # * * * *
 # * * * *
 # * * * *
-r=int(input("Entre the number of rows:"))
-c=int(input("Enter the number of columns: "))
-for i in range(r):
-    for j in range(c):
+n=int(input("Enter the number of rows and column:"))
+for i in range(n):
+    for j in range(n):
         print("*", end =" ")
     print()
