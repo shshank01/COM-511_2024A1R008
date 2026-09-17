@@ -12,8 +12,13 @@ while True:
         cart.append(item)
     elif choice == "2":
         item = input("Enter the item to remove: ")
-        cart.remove(item)
+        if item in cart:
+            cart.remove(item)
+        else:
+            print("Item not found in cart")
     elif choice == "3":
         print("Cart: ", cart)
     elif choice == "4":
         break
+    else:
+        print("Invalid choice")
