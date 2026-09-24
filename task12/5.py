@@ -6,6 +6,7 @@ ls=list()
 #         n.remove(i)
 # print("Updated list: ", n)
 # OR
-if i not in ls:
-        ls.append(i)
+for i in n:
+    if i not in ls:
+            ls.append(i)
 print("Updated list: ", ls)
