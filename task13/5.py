@@ -1,0 +1,1 @@
+# Write a python program to check whether a given value is present in a tuple. If present, then display
