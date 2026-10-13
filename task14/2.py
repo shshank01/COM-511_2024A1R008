@@ -39,16 +39,40 @@ Updated seats: [1, 0, 0, 1, 1, 1, 1, 0, 1]
 """
 
 
+# n = int(input("Enter number of seats: "))
+# seats = list(map(int, input("Enter seat status: ").split()))
+# group = int(input("Enter group size: "))
+# for i in range(n - group + 1):
+#     if all(seats[j] == 0 for j in range(i, i + group)):
+#         for j in range(i, i + group):
+#             seats[j] = 1
+#         allocated = tuple(range(i + 1, i + group + 1))
+#         print("Allocated seats:", allocated)
+#         print("Updated seats:", seats)
+#         break
+# else:
+#     print("Consecutive seats not available")
+
 n = int(input("Enter number of seats: "))
 seats = list(map(int, input("Enter seat status: ").split()))
 group = int(input("Enter group size: "))
-for i in range(n - group + 1):
-    if all(seats[j] == 0 for j in range(i, i + group)):
-        for j in range(i, i + group):
-            seats[j] = 1
-        allocated = tuple(range(i + 1, i + group + 1))
-        print("Allocated seats:", allocated)
-        print("Updated seats:", seats)
-        break
+c = 0
+start = -1
+for i in range(n):
+    if seats[i] == 0:
+        c += 1
+        if c == group:
+            start = i-group+1
+            break
+    else:
+        c = 0
+if start != -1:
+    allocated = []
+    for i in range(start, start+group):
+        seats[i] = 1
+        allocated.append(i+1)
+    print("Modified list: ", seats)
+    print("Seats reserved for the group: ", tuple(allocated))
 else:
     print("Consecutive seats not available")
+    print("Original seats: ", group)

@@ -1,4 +1,4 @@
-# Write a python program to tak etwo inputs a and b, swap their values using temp variable an dprint the updated values.
+# Write a python program to take two inputs a and b, swap their values using temp variable and print the updated values.
 a=int(input("Enter value of a: "))
 b=int(input("Enter value of b: "))
 temp=a

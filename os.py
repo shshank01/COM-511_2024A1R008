@@ -34,6 +34,6 @@ print(os.path.isdir('hallelujah'))'''
 '''import os
 os.remove('3.py')'''
 
-# To remove a file from current directory
+# To remove a folder from current directory
 '''import os
 os.rmdir('demo')'''

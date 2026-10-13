@@ -6,3 +6,4 @@ while temp!=0:
     s+=temp%10
     temp=temp//10
 print("Sum of the digits are: ", s)
+    
