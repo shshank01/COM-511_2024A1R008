@@ -1,3 +1,5 @@
+'''Create a function max_of_three that takes three numbers as arguments and returns the largest of them and 
+also create a parameter function that checks whether a given number is Armstrong or not.''' 
 # Function to find the largest of three numbers
 def max_of_three(a, b, c):
     return max(a, b, c)

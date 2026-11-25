@@ -1,3 +1,6 @@
+'''Write a python program that accepts the length of three sides of a triangle as inputs. The program should 
+indicate whether or not the triangle is a right-angled triangle. (Use Pythagorean theorem) Also find out its 
+area using Heron’s formula.''' 
 import math
 
 a = float(input("Enter first side: "))

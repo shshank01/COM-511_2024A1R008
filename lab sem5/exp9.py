@@ -1,3 +1,4 @@
+# Write a program to implement an employee management system using classes, instances and inheritance. 
 class Employee:
     def __init__(self, emp_id, name, salary):
         self.emp_id = emp_id

@@ -1,3 +1,4 @@
+# Write a program to create a Simple Calculator using a switch case and function for every operation. 
 def add(a, b):
     return a + b
 
