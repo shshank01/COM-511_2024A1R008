@@ -16,10 +16,10 @@ low=0
 high=len(ls)-1
 while low<=high:
     mid=(low+high)//2
-    if ls[mid]==n:
+    if ls1[mid]==n1:
         print("Element found at index",mid)
         break
-    elif ls[mid]<n:
+    elif ls1[mid]<n1:
         low=mid+1
     else:
         high=mid-1
